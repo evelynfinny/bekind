@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.flex-container {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(img/border.png) 100 round;
+    
+}
+
+.img {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.container > div {
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: rgb(55, 0, 255);
+  font-size: 500%;
+  font-family: "Lucida Handwriting", cursive;
+  text-align: center;
+  letter-spacing: 8px;
+  word-spacing: 10px;
+  text-shadow: 5px 5px 10px rgb(6, 66, 196);
+  animation-name: title;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: rgb(144, 34, 235);
+  font-size: 200%;
+  font-family: "Lucida Handwriting", cursive;
+  text-align: center;
+  text-shadow: 5px 5px 10px rgb(111, 60, 194);
+  animation-name: sub-title;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+body {
+    background-image:  linear-gradient(30deg, #7CADE5 12%, transparent 12.5%, transparent 87%, #7CADE5 87.5%, #7CADE5), linear-gradient(150deg, #7CADE5 12%, transparent 12.5%, transparent 87%, #7CADE5 87.5%, #7CADE5), linear-gradient(30deg, #7CADE5 12%, transparent 12.5%, transparent 87%, #7CADE5 87.5%, #7CADE5), linear-gradient(150deg, #7CADE5 12%, transparent 12.5%, transparent 87%, #7CADE5 87.5%, #7CADE5), linear-gradient(60deg, #7CADE580 25%, transparent 25.5%, transparent 75%, #7CADE580 75%, #7CADE580), linear-gradient(60deg, #7CADE580 25%, transparent 25.5%, transparent 75%, #7CADE580 75%, #7CADE580);
+	background-size: 70px 122.5px;
+	background-position: 0 0, 0 0, 35px 61.25px, 35px 61.25px, 0 0, 35px 61.25px;
+	background-color: #90E4ED;
+}
+#heart {
+    margin-top: 35px;
+}
+
+@keyframes title {
+    0% {color: rgb(55, 0, 255);}
+    25% {color: rgb(128, 10, 128);}
+    50% {color: rgb(183, 0, 255);}
+    75% {color: rgb(85, 10, 128);}
+    100% {color: rgb(55, 0, 255);}
+}
+
+@keyframes sub-title {
+    0% {color: rgb(132, 65, 209);}
+    25% {color: rgb(165, 73, 165);}
+    50% {color: rgb(95, 57, 165);}
+    75% {color: rgb(85, 10, 128);}
+    100% {color: rgb(132, 65, 209);}
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+      text-align: center
+    }
+  }  
+
+  @media (max-width: 800px) {
+    .img {
+      display: flex ;
+      flex-direction: column;
+      text-align: center
+    }
+  }
+
+  #Adhvitha {
+    grid-row-start: 1;
+  grid-row-end: 3;
+  }
+
