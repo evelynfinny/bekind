@@ -85,6 +85,34 @@ body {
   margin-top: 35px;
 }
 
+.credits {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #7a1aa0;
+  font-family: "Georgia", serif;
+  animation-name: credits;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes credits {
+  0% {
+    color: #7a1aa0;
+  }
+  25% {
+    color: rgb(130, 37, 153);
+  }
+  50% {
+    color: rgb(173, 0, 165);
+  }
+  75% {
+    color: rgb(162, 0, 255);
+  }
+  100% {
+    color: #7a1aa0;
+  }
+}
+
 @keyframes title {
   0% {
     color: rgb(55, 0, 255);
@@ -122,8 +150,8 @@ body {
 }
 
 @media (max-width: 800px) {
-  .flex-container { 
-    flex-direction: column; 
+  .flex-container {
+    flex-direction: column;
     align-items: center;
   }
   .img {
@@ -135,13 +163,13 @@ body {
     font-size: 40px;
   }
   .img > div > img {
-    max-width: 350px;;
+    max-width: 350px;
   }
 }
 
 @media only screen and (min-width: 1800px) {
   .img > div > img {
-    width: 500px;;
+    width: 500px;
   }
 }
 
